@@ -11,7 +11,7 @@ function workingdays(req, res, next){
 };
 function workinghours(req, res, next) {
     const hours = new Date();
-    if(hours.getHours()< 9 && hours.getHours > 16) {
+    if(hours.getHours()< 9 && hours.getHours > 17) {
         res.sendFile(__dirname + '/views/displaynone.html')
     }
     next()
